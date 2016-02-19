@@ -215,7 +215,7 @@ class ShadowsocksNatService extends BaseService {
         , "-u"
         , "-t" , "10"
         , "-b" , "127.0.0.1"
-        , "-L" , "8.8.8.8:53"
+        , "-L" , "208.67.222.222:443"
         , "-P" , getApplicationInfo.dataDir
         , "-c" , getApplicationInfo.dataDir + "/ss-tunnel-nat.conf")
 
@@ -243,7 +243,7 @@ class ShadowsocksNatService extends BaseService {
         , "-t" , "10"
         , "-b" , "127.0.0.1"
         , "-l" , "8163"
-        , "-L" , "8.8.8.8:53"
+        , "-L" , "208.67.222.222:443"
         , "-P", getApplicationInfo.dataDir
         , "-c" , getApplicationInfo.dataDir + "/ss-tunnel-nat.conf")
 
