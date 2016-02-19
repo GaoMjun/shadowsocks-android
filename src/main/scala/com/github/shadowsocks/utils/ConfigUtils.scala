@@ -69,7 +69,7 @@ object ConfigUtils {
       | cache_dir = "%s";
       | server_ip = %s;
       | server_port = %d;
-      | query_method = tcp_only;
+      | query_method = udp_tcp;
       | run_ipv4 = on;
       | min_ttl = 15m;
       | max_ttl = 1w;
@@ -103,7 +103,7 @@ object ConfigUtils {
       | cache_dir = "%s";
       | server_ip = %s;
       | server_port = %d;
-      | query_method = tcp_only;
+      | query_method = udp_tcp;
       | run_ipv4 = on;
       | min_ttl = 15m;
       | max_ttl = 1w;
@@ -146,7 +146,7 @@ object ConfigUtils {
       | cache_dir = "%s";
       | server_ip = %s;
       | server_port = %d;
-      | query_method = tcp_only;
+      | query_method = udp_tcp;
       | run_ipv4 = on;
       | min_ttl = 15m;
       | max_ttl = 1w;

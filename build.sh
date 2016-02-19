@@ -8,7 +8,7 @@ try pushd src/main
 
 # Build
 #try $ANDROID_NDK_HOME/ndk-build clean
-try $ANDROID_NDK_HOME/ndk-build -j8
+try /usr/local/Cellar/android-ndk/r10e/ndk-build -j4
 
 # copy executables
 rm -rf assets/armeabi-v7a

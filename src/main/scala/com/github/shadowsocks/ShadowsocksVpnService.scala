@@ -327,7 +327,7 @@ class ShadowsocksVpnService extends VpnService with BaseService {
       , "-t", "10"
       , "-b", "127.0.0.1"
       , "-l", "8163"
-      , "-L", "8.8.8.8:53"
+      , "-L", "208.67.222.222:5353"
       , "-P", getApplicationInfo.dataDir
       , "-c", getApplicationInfo.dataDir + "/ss-tunnel-vpn.conf")
 
@@ -376,7 +376,7 @@ class ShadowsocksVpnService extends VpnService with BaseService {
       .setSession(config.profileName)
       .setMtu(VPN_MTU)
       .addAddress(PRIVATE_VLAN.formatLocal(Locale.ENGLISH, "1"), 24)
-      .addDnsServer("8.8.8.8")
+      .addDnsServer("114.114.114.114")
 
     if (config.isIpv6) {
       builder.addAddress(PRIVATE_VLAN6.formatLocal(Locale.ENGLISH, "1"), 126)
